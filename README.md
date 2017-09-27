@@ -11,6 +11,9 @@ nor an event that informs about updates to the properties, they are cached
 whenever the focus of the window or a tab changes (which includes creating new
 windows and tabs).
 
+This extension only works if the `Continue running background apps when
+Chromium is closed` setting (under `Advanced`) is enabled (it is by default).
+
 Known Issues
 ------------
 
