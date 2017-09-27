@@ -22,6 +22,6 @@ Feedback
 --------
 
 You can report bugs or make feature requests on
-[Github](https://github.com/sblask/webextension-do-not-close-browser-with-last-tab).
+[Github](https://github.com/sblask/webextension-do-not-close-browser-with-last-tab)
 
 Patches are welcome.
