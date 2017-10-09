@@ -23,6 +23,11 @@ XFCE: The properties of non-maximized windows given by Chrome are incorrect as
 they do not account for border and title bar. This results in a displacement
 when the window is re-created.
 
+Privacy Policy
+--------------
+
+This extension does not collect or send data of any kind to third parties.
+
 Feedback
 --------
 
