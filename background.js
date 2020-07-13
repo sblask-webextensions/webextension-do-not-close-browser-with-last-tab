@@ -16,10 +16,10 @@ function maybeRememberWindowState() {
 }
 
 function __maybeRememberWindowState(windows) {
-    for (let window of windows) {
+    for (const window of windows) {
         if (window.focused) {
             lastKnownWindowState = {};
-            for (let attribute of CREATE_ATTRIBUTES) {
+            for (const attribute of CREATE_ATTRIBUTES) {
                 lastKnownWindowState[attribute] = window[attribute];
             }
         }
@@ -46,7 +46,7 @@ function __maybeRestoreWindow(tabs) {
         return;
     }
 
-    let targetState = lastKnownWindowState.state;
+    const targetState = lastKnownWindowState.state;
     if (__isSpecialState(targetState)) {
         lastKnownWindowState.state = "normal";
         chrome.windows.create(lastKnownWindowState, __applyState(targetState));
