@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sblask/webextension-do-not-close-browser-with-last-tab.svg?branch=master)](https://travis-ci.org/sblask/webextension-do-not-close-browser-with-last-tab)
+[![Build Status](https://github.com/sblask/webextension-do-not-close-browser-with-last-tab/actions/workflows/build.yml/badge.svg)](https://github.com/sblask/webextension-do-not-close-browser-with-last-tab/actions/workflows/build.yml)
 
 Do not close browser with last tab
 ==================================
