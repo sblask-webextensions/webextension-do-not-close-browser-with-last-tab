@@ -1,0 +1,40 @@
+{
+    "branches": [
+        "main"
+    ],
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        [
+            "@semantic-release/exec",
+            {
+                "prepareCmd": "./bin/prepare-chrome.sh ${nextRelease.version}"
+            }
+        ],
+        [
+            "semantic-release-chrome",
+            {
+                "asset": "do_not_close_browser_with_last_tab-${nextRelease.version}.zip",
+                "distFolder": "dist-chrome",
+                "extensionId": "iiolkehjeklhkdphaakkceadenbcdahj",
+                "target": "draft"
+            }
+        ],
+        [
+            "@semantic-release/github",
+            {
+                "assets": [
+                    {
+                        "label": "Chrome Extension",
+                        "path": "*.zip"
+                    }
+                ],
+                "draftRelease": true,
+                "failCommentCondition": false,
+                "releasedLabels": false,
+                "successCommentCondition": "<% return issue.user.type !== 'Bot'; %>"
+            }
+        ]
+    ],
+    "tagFormat": "${version}"
+}
