@@ -1,14 +1,8 @@
 {
     "author": "Sebastian Blask",
     "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "donotclosebrowserwithlasttab@sblask"
-        }
+        "service_worker": "background.js",
+        "type": "module"
     },
     "description": "Creates a new window with the same properties as the closing one when the last tab is closed.",
     "homepage_url": "https://github.com/sblask/webextension-do-not-close-browser-with-last-tab",
@@ -19,11 +13,13 @@
         "64": "icon-64x64.png",
         "128": "icon-128x128.png"
     },
-    "manifest_version": 2,
+    "manifest_version": 3,
+    "minimum_chrome_version": "102",
     "name": "Do not close browser with last tab",
     "offline_enabled": true,
     "permissions": [
-        "background"
+        "background",
+        "storage"
     ],
     "version": "x.x.x"
 }

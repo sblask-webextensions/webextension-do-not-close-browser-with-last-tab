@@ -8,16 +8,18 @@ new window with the same properties as the closing one when this happens. You
 might get a flicker, but the perceived effect will be that a new tab replaces
 the closed one.
 
-As there is neither a way to capture the window properties while the tab is
-closing nor an event that informs about updates to the properties, they are
-cached whenever the focus of the window or a tab changes (which includes
-creating new windows and tabs).
+As there is no way to capture the window properties while the tab is closing,
+they are cached whenever the window bounds, the focused window, or the active
+tab changes.
 
 This extension only works if the `Continue running background apps when
 Chromium is closed` setting (under `Advanced`) is enabled (it is by default).
 
 Known Issues
 ------------
+
+macOS: Fullscreen windows are restored as maximized because fullscreen
+triggered through the extension API hides Chrome's tab bar.
 
 XFCE: The properties of non-maximized windows given by Chrome are incorrect as
 they do not account for border and title bar. This results in a displacement
