@@ -29,7 +29,6 @@ async function maybeRememberWindowState(getWindowFunction) {
     await chrome.storage.session.set({[STORAGE_KEY]: windowAttributes});
 }
 
-
 async function maybeRestoreWindow(_tabId, removeInfo) {
     if (removeInfo.isWindowClosing) {
         return;
