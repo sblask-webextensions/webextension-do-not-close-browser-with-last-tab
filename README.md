@@ -1,4 +1,5 @@
 [![pre-commit Status](https://github.com/sblask/webextension-do-not-close-browser-with-last-tab/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/sblask/webextension-do-not-close-browser-with-last-tab/actions/workflows/pre-commit.yml)
+[![Chrome Web Store Version](https://img.shields.io/chrome-web-store/v/iiolkehjeklhkdphaakkceadenbcdahj?color=db4437)](https://chromewebstore.google.com/detail/do-not-close-browser-with/iiolkehjeklhkdphaakkceadenbcdahj)
 
 Do not close browser with last tab
 ==================================
